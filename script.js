@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', addGreetingsToDOM);
+
 function addGreetingsToDOM() {
     var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
@@ -17,8 +19,8 @@ function addGreetingsToDOM() {
         paragraph.textContent = greeting;
         // Append the paragraph to the body of the document
         document.body.appendChild(paragraph);
+
+        // Log the greeting to the console
+        console.log(greeting);
     }
 }
-
-// Call the function when the DOM content is loaded
-document.addEventListener('DOMContentLoaded', addGreetingsToDOM);

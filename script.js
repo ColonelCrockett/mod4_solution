@@ -11,11 +11,7 @@
             greeting = "Hello " + names[i];
         }
 
-        // Create a new paragraph element
-        var paragraph = document.createElement('p');
-        // Set the text content of the paragraph to the greeting
-        paragraph.textContent = greeting;
-        // Append the paragraph to the body of the document
-        document.body.appendChild(paragraph);
+        // Log the greeting to the console
+        console.log(greeting);
     }
 })();

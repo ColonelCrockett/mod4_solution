@@ -3,11 +3,19 @@
 
     for (var i = 0; i < names.length; i++) {
         var firstLetter = names[i].charAt(0).toLowerCase();
+        var greeting;
 
         if (firstLetter === 'j') {
-            byeSpeaker.speak(names[i]);
+            greeting = "Good Bye " + names[i];
         } else {
-            helloSpeaker.speak(names[i]);
+            greeting = "Hello " + names[i];
         }
+
+        // Create a new paragraph element
+        var paragraph = document.createElement('p');
+        // Set the text content of the paragraph to the greeting
+        paragraph.textContent = greeting;
+        // Append the paragraph to the body of the document
+        document.body.appendChild(paragraph);
     }
 })();
